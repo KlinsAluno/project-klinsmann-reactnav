@@ -5,15 +5,19 @@ const MyApp = () => {
     <>
       <Text>Hello Word</Text>
       <Text>IFAL</Text>
-      <Gato nome="Jubileu" />
-      <Gato nome="Chico" />
-      <Gato nome="Garfild" />
+      <Gato nome="Jubileu" idade={5} />
+      <Gato nome="Chico" idade={3} />
+      <Gato nome="Garfild" idade={12} />
     </>
   );
 };
 
-const Gato = (props) => {
-  return <Text>Eu sou um Gato {props.nome.toUpperCase()}.</Text>;
+const Gato = ({ nome, idade }) => {
+  return (
+    <Text>
+      Eu sou um Gato, meu nome é {nome.toUpperCase()} e eu tenho {idade} ano(s).
+    </Text>
+  );
 };
 
 export default MyApp;
