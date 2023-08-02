@@ -13,15 +13,10 @@ const MyApp = () => {
 };
 
 const Gato = ({ nome, idade }) => {
-  let texto = "anos";
-  if (idade === 1) {
-    texto = "ano";
-  }
-
   return (
     <Text>
-      Eu sou um(a) Gato(a), meu nome é {nome.toUpperCase()} e eu tenho {idade}{" "}
-      {texto}.
+      Eu sou um(a) Gato(a), meu nome é {nome.toUpperCase()} e eu tenho {idade}
+      {idade === 1 ? " ano" : " anos"}.
     </Text>
   );
 };
