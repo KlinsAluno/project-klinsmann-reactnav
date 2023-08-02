@@ -5,15 +5,15 @@ const MyApp = () => {
     <>
       <Text>Hello Word</Text>
       <Text>IFAL</Text>
-      <Gato />
-      <Gato />
-      <Gato />
+      <Gato nome="Jubileu" />
+      <Gato nome="Chico" />
+      <Gato nome="Garfild" />
     </>
   );
 };
 
-const Gato = () => {
-  return <Text>Eu sou um Gato.</Text>;
+const Gato = (props) => {
+  return <Text>Eu sou um Gato {props.nome.toUpperCase()}.</Text>;
 };
 
 export default MyApp;
