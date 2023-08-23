@@ -7,7 +7,7 @@ const TelaLogin = () => {
       <Text>Seja Bem-Vindo</Text>
       <Login />
       <Senha />
-      <Button title="LOGAR" />
+      <Button title="LOGAR" color="black" />
     </>
   );
 };
