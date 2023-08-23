@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Text, TextInput } from "react-native";
+import TelaLogin from "./TelaLogin";
 
 const MyApp = () => {
   return (
@@ -50,4 +51,5 @@ const Gato = ({ idade }) => {
   );
 };
 
-export default MyApp;
+// export default MyApp;
+export default TelaLogin;
